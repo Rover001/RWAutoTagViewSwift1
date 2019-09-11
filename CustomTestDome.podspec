@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CustomTestDome"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "自己再一次测试CustomTestDome"
   #s.description  = <<-DESC
 #DESC
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
   s.author             = { "Rover001" => "zengyun6666@163.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/Rover001/CustomTestDome.git", :tag => "#{s.version}" }
-  s.source_files  = "CustomTestDome","CustomTestDome/**/*.{h}"
+  s.source_files  = "CustomTestDome","CustomTestDome/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "CustomTestDome/**/*.h"
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
