@@ -6,8 +6,10 @@ Pod::Spec.new do |s|
   s.authors = {"Rover001"=>"zengyun6666@163.com"}
   s.homepage = "https://github.com/Rover001/CustomTestDome"
   s.requires_arc = true
-  s.source = { :path => '.' }
+#s.source = { :path => '.' }
+  s.source = { :git => "https://github.com/Rover001/CustomTestDome.git", :tag => "#{s.version}" }
+
 
   s.ios.deployment_target    = '9.0'
-  s.ios.vendored_framework   = 'ios/*.framework'
+  s.ios.vendored_framework   = 'ios/DeviceEngine.framework','ios/CustomTestDome.framework'
 end
